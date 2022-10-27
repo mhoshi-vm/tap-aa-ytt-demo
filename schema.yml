@@ -1,0 +1,27 @@
+#@data/values-schema
+---
+api1_enabled: true
+api1_url: /hoge
+api1_method: put
+api1_description: foo
+api2_enabled: false
+api2_url: ""
+api2_method: ""
+api2_description: ""
+api3_enabled: true
+api3_url: /hoge3
+api3_method: put
+api3_description: foo
+api4_enabled: true
+api4_url: /hoge4
+api4_method: put
+api4_description: foo
+api5_enabled: true
+api5_url: /hoge5
+api5_method: put
+api5_description: foo
+
+version: 1.0.0
+
+adv_param1: hoge
+adv_param2: foo
