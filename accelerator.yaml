@@ -167,9 +167,4 @@ accelerator:
         name: advanced
 
 engine:
-  type: Chain
-  transformations:
-    - type: Exclude
-      patterns: [ "accelerator.yaml", "tanzu-application-platform.yaml" ]
-    - type: YTT
-
+  type: YTT
