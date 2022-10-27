@@ -11,7 +11,7 @@ accelerator:
       defaultValue: false
     - name: api1Url
       description: url
-      defaultValue: ""
+      defaultValue: "/"
       dependsOn:
         name: api1Enabled
       validationRegex: ^/.*$
@@ -40,7 +40,7 @@ accelerator:
       defaultValue: false
     - name: api2Url
       description: url
-      defaultValue: ""
+      defaultValue: "/"
       dependsOn:
         name: api2Enabled
       validationRegex: ^/.*$
@@ -72,7 +72,7 @@ accelerator:
       dependsOn:
         name: api3Enabled
       validationRegex: ^/.*$
-      defaultValue: ""
+      defaultValue: "/"
     - name: api3Method
       description: method
       inputType: select
@@ -98,7 +98,7 @@ accelerator:
       defaultValue: false
     - name: api4Url
       description: url
-      defaultValue: ""
+      defaultValue: "/"
       dependsOn:
         name: api4Enabled
       validationRegex: ^/.*$
@@ -127,7 +127,7 @@ accelerator:
       defaultValue: false
     - name: api5Url
       description: url
-      defaultValue: ""
+      defaultValue: "/"
       dependsOn:
         name: api5Enabled
       validationRegex: ^/.*$
