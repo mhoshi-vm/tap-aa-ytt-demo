@@ -14,7 +14,7 @@ accelerator:
       dependsOn:
         name: api1_enabled
       validationRegex: ^/.*$
-    - name: api1_url
+    - name: api1_method
       description: method
       inputType: select
       defaultValue: GET
@@ -41,7 +41,7 @@ accelerator:
       dependsOn:
         name: api2_enabled
       validationRegex: ^/.*$
-    - name: api2_url
+    - name: api2_method
       description: method
       inputType: select
       defaultValue: GET
@@ -68,7 +68,7 @@ accelerator:
       dependsOn:
         name: api3_enabled
       validationRegex: ^/.*$
-    - name: api3_url
+    - name: api3_method
       description: method
       inputType: select
       defaultValue: GET
@@ -95,7 +95,7 @@ accelerator:
       dependsOn:
         name: api4_enabled
       validationRegex: ^/.*$
-    - name: api4_url
+    - name: api4_method
       description: method
       inputType: select
       defaultValue: GET
@@ -122,7 +122,7 @@ accelerator:
       dependsOn:
         name: api5_enabled
       validationRegex: ^/.*$
-    - name: api5_url
+    - name: api5_method
       description: method
       inputType: select
       defaultValue: GET
