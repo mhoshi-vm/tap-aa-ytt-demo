@@ -167,7 +167,8 @@ accelerator:
         name: advanced
 
 engine:
-  type: YTT
   merge:
     - include: [ "**" ]
       exclude: [ "accelerator.yaml", "tanzu-application-platform.yaml" ]
+      chain:
+        type: YTT
