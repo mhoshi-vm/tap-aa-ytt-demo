@@ -1,0 +1,173 @@
+accelerator:
+  displayName: Ytt Demo
+  description: A demo for YTT
+  tags:
+    - tanzu
+    - ytt
+  options:
+    - name: api1_enabled
+      display: true
+      dataType: boolean
+      defaultValue: false
+    - name: api1_url
+      description: url
+      dependsOn:
+        name: api1_enabled
+      validationRegex: ^/.*$
+    - name: api1_url
+      description: method
+      inputType: select
+      defaultValue: GET
+      choices:
+        - text: GET
+          value: GET
+        - text: PUT
+          value: PUT
+        - text: POST
+          value: POST
+      dependsOn:
+        name: api1_enabled
+    - name: api1_description
+      description: description
+      dependsOn:
+        name: api1_enabled
+
+    - name: api2_enabled
+      display: true
+      dataType: boolean
+      defaultValue: false
+    - name: api2_url
+      description: url
+      dependsOn:
+        name: api2_enabled
+      validationRegex: ^/.*$
+    - name: api2_url
+      description: method
+      inputType: select
+      defaultValue: GET
+      choices:
+        - text: GET
+          value: GET
+        - text: PUT
+          value: PUT
+        - text: POST
+          value: POST
+      dependsOn:
+        name: api2_enabled
+    - name: api2_description
+      description: description
+      dependsOn:
+        name: api2_enabled
+
+    - name: api3_enabled
+      display: true
+      dataType: boolean
+      defaultValue: false
+    - name: api3_url
+      description: url
+      dependsOn:
+        name: api3_enabled
+      validationRegex: ^/.*$
+    - name: api3_url
+      description: method
+      inputType: select
+      defaultValue: GET
+      choices:
+        - text: GET
+          value: GET
+        - text: PUT
+          value: PUT
+        - text: POST
+          value: POST
+      dependsOn:
+        name: api3_enabled
+    - name: api3_description
+      description: description
+      dependsOn:
+        name: api3_enabled
+
+    - name: api4_enabled
+      display: true
+      dataType: boolean
+      defaultValue: false
+    - name: api4_url
+      description: url
+      dependsOn:
+        name: api4_enabled
+      validationRegex: ^/.*$
+    - name: api4_url
+      description: method
+      inputType: select
+      defaultValue: GET
+      choices:
+        - text: GET
+          value: GET
+        - text: PUT
+          value: PUT
+        - text: POST
+          value: POST
+      dependsOn:
+        name: api4_enabled
+    - name: api4_description
+      description: description
+      dependsOn:
+        name: api4_enabled
+
+    - name: api5_enabled
+      display: true
+      dataType: boolean
+      defaultValue: false
+    - name: api5_url
+      description: url
+      dependsOn:
+        name: api5_enabled
+      validationRegex: ^/.*$
+    - name: api5_url
+      description: method
+      inputType: select
+      defaultValue: GET
+      choices:
+        - text: GET
+          value: GET
+        - text: PUT
+          value: PUT
+        - text: POST
+          value: POST
+      dependsOn:
+        name: api5_enabled
+    - name: api5_description
+      description: description
+      dependsOn:
+        name: api5_enabled
+
+    - name: version
+      inputType: text
+      label: Hash tags to search
+      description: Hash tags to search (e.g. #hoge)
+      required: true
+      validationRegex: ^[0-9\.]*$
+
+    - name: advanced
+      display: true
+      dataType: boolean
+      defaultValue: false
+    - name: adv_param1
+      inputType: text
+      label: Param1
+      required: true
+      default: "aaaa"
+      dependsOn:
+        name: advanced
+    - name: adv_param2
+      inputType: text
+      label: Param2
+      required: true
+      default: "aaaa"
+      dependsOn:
+        name: advanced
+
+engine:
+  type: YTT
+  merge:
+    - include: [ "**" ]
+      exclude: [ "accelerator.yaml", "tanzu-application-platform.yaml" ]
