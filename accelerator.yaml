@@ -11,6 +11,7 @@ accelerator:
       defaultValue: false
     - name: api1Url
       description: url
+      defaultValue: ""
       dependsOn:
         name: api1Enabled
       validationRegex: ^/.*$
@@ -29,6 +30,7 @@ accelerator:
         name: api1Enabled
     - name: api1Description
       description: description
+      defaultValue: ""
       dependsOn:
         name: api1Enabled
 
@@ -38,6 +40,7 @@ accelerator:
       defaultValue: false
     - name: api2Url
       description: url
+      defaultValue: ""
       dependsOn:
         name: api2Enabled
       validationRegex: ^/.*$
@@ -56,6 +59,7 @@ accelerator:
         name: api2Enabled
     - name: api2Description
       description: description
+      defaultValue: ""
       dependsOn:
         name: api2Enabled
 
@@ -68,6 +72,7 @@ accelerator:
       dependsOn:
         name: api3Enabled
       validationRegex: ^/.*$
+      defaultValue: ""
     - name: api3Method
       description: method
       inputType: select
@@ -83,6 +88,7 @@ accelerator:
         name: api3Enabled
     - name: api3Description
       description: description
+      defaultValue: ""
       dependsOn:
         name: api3Enabled
 
@@ -92,6 +98,7 @@ accelerator:
       defaultValue: false
     - name: api4Url
       description: url
+      defaultValue: ""
       dependsOn:
         name: api4Enabled
       validationRegex: ^/.*$
@@ -110,6 +117,7 @@ accelerator:
         name: api4Enabled
     - name: api4Description
       description: description
+      defaultValue: ""
       dependsOn:
         name: api4Enabled
 
@@ -119,6 +127,7 @@ accelerator:
       defaultValue: false
     - name: api5Url
       description: url
+      defaultValue: ""
       dependsOn:
         name: api5Enabled
       validationRegex: ^/.*$
@@ -137,6 +146,7 @@ accelerator:
         name: api5Enabled
     - name: api5Description
       description: description
+      defaultValue: ""
       dependsOn:
         name: api5Enabled
 
@@ -155,16 +165,20 @@ accelerator:
       inputType: text
       label: Param1
       required: true
-      default: "aaaa"
+      defaultValue: "aaaa"
       dependsOn:
         name: advanced
     - name: advParam2
       inputType: text
       label: Param2
       required: true
-      default: "aaaa"
+      defaultValue: "aaaa"
       dependsOn:
         name: advanced
 
 engine:
-  type: YTT
+  type: Chain
+  transformations:
+    - type: Exclude
+      patterns: [ "accelerator.yaml", "tanzu-application-platform.yaml" ]
+    - type: YTT
