@@ -1,27 +1,27 @@
 #@data/values-schema
 ---
-api1_enabled: true
-api1_url: /hoge
-api1_method: put
-api1_description: foo
-api2_enabled: false
-api2_url: ""
-api2_method: ""
-api2_description: ""
-api3_enabled: true
-api3_url: /hoge3
-api3_method: put
-api3_description: foo
-api4_enabled: true
-api4_url: /hoge4
-api4_method: put
-api4_description: foo
-api5_enabled: true
-api5_url: /hoge5
-api5_method: put
-api5_description: foo
+api1Enabled: true
+api1Url: /hoge
+api1Method: put
+api1Description: foo
+api2Enabled: false
+api2Url: ""
+api2Method: ""
+api2Description: ""
+api3Enabled: true
+api3Url: /hoge3
+api3Method: put
+api3Description: foo
+api4Enabled: true
+api4Url: /hoge4
+api4Method: put
+api4Description: foo
+api5Enabled: true
+api5Url: /hoge5
+api5Method: put
+api5Description: foo
 
 version: 1.0.0
 
-adv_param1: hoge
-adv_param2: foo
+advParam1: hoge
+advParam2: foo

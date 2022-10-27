@@ -5,16 +5,16 @@ accelerator:
     - tanzu
     - ytt
   options:
-    - name: api1_enabled
+    - name: api1Enabled
       display: true
       dataType: boolean
       defaultValue: false
-    - name: api1_url
+    - name: api1Url
       description: url
       dependsOn:
-        name: api1_enabled
+        name: api1Enabled
       validationRegex: ^/.*$
-    - name: api1_method
+    - name: api1Method
       description: method
       inputType: select
       defaultValue: GET
@@ -26,22 +26,22 @@ accelerator:
         - text: POST
           value: POST
       dependsOn:
-        name: api1_enabled
-    - name: api1_description
+        name: api1Enabled
+    - name: api1Description
       description: description
       dependsOn:
-        name: api1_enabled
+        name: api1Enabled
 
-    - name: api2_enabled
+    - name: api2Enabled
       display: true
       dataType: boolean
       defaultValue: false
-    - name: api2_url
+    - name: api2Url
       description: url
       dependsOn:
-        name: api2_enabled
+        name: api2Enabled
       validationRegex: ^/.*$
-    - name: api2_method
+    - name: api2Method
       description: method
       inputType: select
       defaultValue: GET
@@ -53,22 +53,22 @@ accelerator:
         - text: POST
           value: POST
       dependsOn:
-        name: api2_enabled
-    - name: api2_description
+        name: api2Enabled
+    - name: api2Description
       description: description
       dependsOn:
-        name: api2_enabled
+        name: api2Enabled
 
-    - name: api3_enabled
+    - name: api3Enabled
       display: true
       dataType: boolean
       defaultValue: false
-    - name: api3_url
+    - name: api3Url
       description: url
       dependsOn:
-        name: api3_enabled
+        name: api3Enabled
       validationRegex: ^/.*$
-    - name: api3_method
+    - name: api3Method
       description: method
       inputType: select
       defaultValue: GET
@@ -80,22 +80,22 @@ accelerator:
         - text: POST
           value: POST
       dependsOn:
-        name: api3_enabled
-    - name: api3_description
+        name: api3Enabled
+    - name: api3Description
       description: description
       dependsOn:
-        name: api3_enabled
+        name: api3Enabled
 
-    - name: api4_enabled
+    - name: api4Enabled
       display: true
       dataType: boolean
       defaultValue: false
-    - name: api4_url
+    - name: api4Url
       description: url
       dependsOn:
-        name: api4_enabled
+        name: api4Enabled
       validationRegex: ^/.*$
-    - name: api4_method
+    - name: api4Method
       description: method
       inputType: select
       defaultValue: GET
@@ -107,22 +107,22 @@ accelerator:
         - text: POST
           value: POST
       dependsOn:
-        name: api4_enabled
-    - name: api4_description
+        name: api4Enabled
+    - name: api4Description
       description: description
       dependsOn:
-        name: api4_enabled
+        name: api4Enabled
 
-    - name: api5_enabled
+    - name: api5Enabled
       display: true
       dataType: boolean
       defaultValue: false
-    - name: api5_url
+    - name: api5Url
       description: url
       dependsOn:
-        name: api5_enabled
+        ame: api5Enabled
       validationRegex: ^/.*$
-    - name: api5_method
+    - name: api5Method
       description: method
       inputType: select
       defaultValue: GET
@@ -134,16 +134,16 @@ accelerator:
         - text: POST
           value: POST
       dependsOn:
-        name: api5_enabled
-    - name: api5_description
+        name: api5Enabled
+    - name: api5Description
       description: description
       dependsOn:
-        name: api5_enabled
+        name: api5Enabled
 
     - name: version
       inputType: text
-      label: Hash tags to search
-      description: Hash tags to search (e.g. #hoge)
+      label: Version
+      description: Version
       required: true
       validationRegex: ^[0-9\.]*$
 
@@ -151,14 +151,14 @@ accelerator:
       display: true
       dataType: boolean
       defaultValue: false
-    - name: adv_param1
+    - name: advParam1
       inputType: text
       label: Param1
       required: true
       default: "aaaa"
       dependsOn:
         name: advanced
-    - name: adv_param2
+    - name: advParam2
       inputType: text
       label: Param2
       required: true
