@@ -120,7 +120,7 @@ accelerator:
     - name: api5Url
       description: url
       dependsOn:
-        ame: api5Enabled
+        name: api5Enabled
       validationRegex: ^/.*$
     - name: api5Method
       description: method
