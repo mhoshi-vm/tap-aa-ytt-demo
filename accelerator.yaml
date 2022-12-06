@@ -208,13 +208,6 @@ accelerator:
         value: [value-2]
       defaultValue: text value
   
-    - name: dependsOnCheckbox2
-      label: "Dummy"
-      display: true
-      defaultValue: dummy
-      dependsOn:
-        name: checkbox
-        value: [value-2]
 
 engine:
   type: Chain
