@@ -207,6 +207,14 @@ accelerator:
         name: checkbox
         value: [value-2]
       defaultValue: text value
+
+    - name: dependsOnCheckbox2
+      label: 'depends on checkbox'
+      description: Visibility depends on the checkbox option containing a checked value value-2.
+      dependsOn:
+        name: checkbox
+        value: [value-2]
+      defaultValue: text value
   
 
 engine:
