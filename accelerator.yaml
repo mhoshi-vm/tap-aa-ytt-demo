@@ -186,37 +186,6 @@ accelerator:
       dependsOn:
         name: advanced
 
-    - name: checkbox
-      inputType: checkbox
-      display: true
-      dataType: [string]
-      defaultValue:
-        - value-2
-      choices:
-        - text: Checkbox choice 1
-          value: value-1
-        - text: Checkbox choice 2
-          value: value-2
-        - text: Checkbox choice 3
-          value: value-3
-  
-    - name: dependsOnCheckbox1
-      label: 'depends on checkbox'
-      description: Visibility depends on the checkbox option containing a checked value value-2.
-      dependsOn:
-        name: checkbox
-        value: [value-2]
-      defaultValue: text value
-
-    - name: dependsOnCheckbox2
-      label: 'depends on checkbox'
-      description: Visibility depends on the checkbox option containing a checked value value-2.
-      dependsOn:
-        name: checkbox
-        value: [value-2]
-      defaultValue: text value
-  
-
 engine:
   type: Chain
   transformations:
