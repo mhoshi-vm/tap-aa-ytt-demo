@@ -23,5 +23,6 @@ api5Description: foo
 
 version: 1.0.0
 
+advanced: false
 advParam1: hoge
 advParam2: foo
